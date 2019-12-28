@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!---构造器注入开始-->
+    <bean id="helloSpring" class="com.jc.entity.HelloSpring">
+        <constructor-arg name="name" value="张三" type="java.lang.String"></constructor-arg>
+        <constructor-arg name="sex" value="1" type="int"></constructor-arg>
+    </bean>
+
+    <bean id="helloSpring2" class="com.jc.entity.HelloSpring"></bean>
+
+    <bean id="helloSpring3" class="com.jc.entity.HelloSpring" factory-method="getHelloSpring"></bean>
+    <!---构造器注入结束-->
+
+    <!---属性注入开始-->
+    <bean id="driver" class="com.jc.entity.DriverFactorBean">
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306"></property>
+    </bean>
+    <!---属性注入结束-->
+
+
+</beans>

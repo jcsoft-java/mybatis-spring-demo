@@ -32,7 +32,22 @@
             <artifactId>mybatis-spring</artifactId>
             <version>2.0.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.0.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.45</version>
+        </dependency>
     </dependencies>
+
+
+
 
     <build>
         <finalName>mybatis-spring-demo</finalName>
