@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mybatisspringdemo" />
+        <module name="aop" />
+        <module name="mvcdemo" />
       </profile>
     </annotationProcessing>
   </component>
